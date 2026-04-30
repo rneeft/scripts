@@ -1,0 +1,68 @@
+
+autoinstall:
+  version: 1
+  identity:
+    realname: 'Rick Neeft'
+    username: rick
+    password: '*'
+    hostname: framework-pro
+
+  locale: en_GB.UTF-8
+  timezone: Europe/Amsterdam
+
+  source:
+    id: ubuntu-desktop-minimal
+
+  #codecs:
+  #  install: true
+
+  #drivers:
+  #  install: true
+
+  # packages:
+  # - git
+  # - curl
+  # - ufw
+  # - unzip
+  # - build-essential
+  # - software-properties-common
+  # - gnome-tweaks
+  # - gnome-shell-extension-manager
+  # - nano
+  # - dotnet-sdk-10.0
+  # - flatpak
+  # - dosbox
+
+  # snaps:
+    # - name: bruno 
+    # - name: cups # printer
+    # - name: discord
+    # - name: kolourpaint
+    # - name: pdfarranger
+    # - name: spotify
+    # - name: steam
+    #- name: code
+    #  classic: true
+    # - name: vivaldi
+    #- name: rider
+    #  classic: true
+    #- name: datagrip
+    #  classic: true
+    #- name: clion
+    #  classic: true
+
+  #updates: all
+
+  late-commands:
+    # Make sure password is expired is forced to change it on first login
+    - curtin in-target --target=/target -- passwd -d rick
+    - curtin in-target --target=/target -- chage -d 0 rick
+
+    # turn on firewall and deny incomming requests by default
+    - curtin in-target --target=/target -- ufw enable
+    - curtin in-target --target=/target -- ufw default deny incoming
+    - curtin in-target --target=/target -- ufw default allow outgoing
+
+  error-commands:
+    - tar -czf /installer-logs.tar.gz /var/log/installer/
+    - journalctl -b > /installer-journal.log
