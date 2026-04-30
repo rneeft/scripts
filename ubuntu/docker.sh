@@ -17,4 +17,8 @@ sudo apt install -y \
   docker-buildx-plugin \
   docker-compose-plugin
 
+sudo groupadd docker
+
 sudo usermod -aG docker "$USER"
+
+newgrp docker
