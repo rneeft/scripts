@@ -20,5 +20,3 @@ sudo apt install -y \
 sudo groupadd docker
 
 sudo usermod -aG docker "$USER"
-
-newgrp docker
