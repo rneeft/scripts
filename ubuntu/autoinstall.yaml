@@ -32,24 +32,6 @@ autoinstall:
     - flatpak
     - dosbox
 
-  snaps:
-    - name: bruno
-    - name: brave
-    - name: cups # printer
-    - name: discord
-    - name: kolourpaint
-    - name: pdfarranger
-    - name: spotify
-    - name: steam
-    - name: code
-      classic: true
-    - name: rider
-      classic: true
-    - name: datagrip
-      classic: true
-    - name: clion
-      classic: true
-
   updates: all
 
   late-commands:
