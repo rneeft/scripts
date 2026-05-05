@@ -1,0 +1,89 @@
+{
+    "background-color": [
+        0,
+        0,
+        0,
+        0.25
+    ],
+    "customize-topbar": false,
+    "topbar-border-thickness": 0,
+    "topbar-border-color": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "topbar-background-color": [
+        0,
+        0,
+        0,
+        0.25
+    ],
+    "topbar-foreground-color": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "customize-label": false,
+    "hide-labels": false,
+    "label-border-radius": 0,
+    "label-border-thickness": 0,
+    "label-border-color": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "label-background-color": [
+        0,
+        0,
+        0,
+        0.25
+    ],
+    "label-foreground-color": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "border-radius": 3.1133004926108376,
+    "border-thickness": 0,
+    "border-color": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "separator-thickness": 0,
+    "separator-color": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "icon-border-radius": 3,
+    "icon-border-thickness": 0,
+    "icon-border-color": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "icon-background-color": [
+        1,
+        1,
+        1,
+        0
+    ],
+    "icon-effect": 0,
+    "icon-effect-color": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "meta": {
+        "title": "My Theme"
+    }
+}
